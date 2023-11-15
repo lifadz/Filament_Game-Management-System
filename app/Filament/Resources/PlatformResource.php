@@ -33,7 +33,7 @@ class PlatformResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('platform_name')
+                TextColumn::make('platform_name')->searchable()
             ])
             ->filters([
                 //
