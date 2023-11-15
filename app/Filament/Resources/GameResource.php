@@ -74,7 +74,7 @@ class GameResource extends Resource
         {
             return $table
             ->columns([
-                TextColumn::make('title'),
+                TextColumn::make('title')->searchable(),
                 ImageColumn::make('cover'),
                 TextColumn::make('genre.genre_name')->label('genre'),
                 TextColumn::make('release_date'),
