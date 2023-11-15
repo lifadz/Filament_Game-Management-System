@@ -33,7 +33,7 @@ class GenreResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('genre_name',)
+                TextColumn::make('genre_name')->searchable()
             ])
             ->filters([
                 //
