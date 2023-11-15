@@ -38,7 +38,7 @@ class DeveloperResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('developer_name')
-                    ->sortable(),
+                    searchable(),
                 TextColumn::make('founded_date'),
                 TextColumn::make('country')
                 
